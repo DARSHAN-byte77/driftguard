@@ -1,0 +1,22 @@
+# Python environments
+.venv/
+backend/venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment and secrets
+.env
+backend/.env
+*.env.local
+
+# Databases and logs
+*.db
+*.sqlite*
+*.log
+
+# Storage artifacts
+backend/storage/satellite/*
+backend/storage/processed/*
+!backend/storage/satellite/.gitkeep
+!backend/storage/processed/.gitkeep
