@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #e2e8f0;
+  background: #020617;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 360px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #020617;
+  background-image: radial-gradient(ellipse at 48% -15%, rgb(15 118 110 / 13%), transparent 48%);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #f0fdfa;
+  background: rgb(13 148 136 / 45%);
+}
+
+.leaflet-container {
+  background: #07111f;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.leaflet-control-attribution {
+  background: rgb(2 6 23 / 75%) !important;
+  color: #94a3b8 !important;
+  font-size: 9px !important;
+}
+
+.leaflet-control-attribution a {
+  color: #5eead4 !important;
+}
+
+.leaflet-control-zoom a {
+  border-color: #334155 !important;
+  background: #020617 !important;
+  color: #e2e8f0 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #1e293b !important;
+}
+
+.leaflet-tooltip {
+  border: 1px solid #334155;
+  border-radius: 6px;
+  background: #020617;
+  color: #e2e8f0;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 30%);
+}
+
+.leaflet-tooltip-top::before {
+  border-top-color: #334155;
+}
