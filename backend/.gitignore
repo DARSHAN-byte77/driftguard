@@ -1,0 +1,13 @@
+venv/
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+test_marinewatch.db
+*.db
+storage/satellite/*
+storage/processed/*
+storage/uploads/*
+!storage/satellite/.gitkeep
+!storage/processed/.gitkeep
+!storage/uploads/.gitkeep
